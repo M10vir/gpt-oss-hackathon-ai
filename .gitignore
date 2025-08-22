@@ -20,6 +20,7 @@ venv/
 *.log
 *.tmp
 *.swp
+*.orig
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
