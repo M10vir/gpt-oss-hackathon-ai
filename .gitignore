@@ -3,15 +3,21 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
+*.sqlite3
 
 # Environment variables
 .env
+.env.*
+*.local
 
 # Virtual environment
 venv/
+.venv/
+env/
 
 # VS Code settings (optional)
 .vscode/
+.idea/
 
 # macOS system files
 .DS_Store
@@ -33,6 +39,7 @@ htmlcov/
 # Build artifacts
 build/
 dist/
+node_modules/
 *.egg-info/
 EOF
 
