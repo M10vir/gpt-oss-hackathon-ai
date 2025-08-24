@@ -60,3 +60,8 @@ pip install -r requirements.txt
 
 # run backend
 uvicorn backend.main:app --reload --reload-dir backend
+
+# Frontend (React)
+cd frontend
+npm install
+npm run dev
