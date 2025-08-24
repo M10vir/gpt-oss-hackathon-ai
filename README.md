@@ -79,6 +79,13 @@ ollama pull llama3.2:3b
 • Python 3.10+, Node 18+, Homebrew (macOS)  
 • Repo cloned locally
 
+## 📥 Clone This Repo
+
+```bash
+# Clone repo
+git clone https://github.com/YourUsername/gpt-oss-hackathon-ai.git
+cd gpt-oss-hackathon-ai
+```
 1) Start Backend (FastAPI)
 ```bash
 cd backend
