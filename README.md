@@ -76,7 +76,7 @@ This project was built for the **Hackathon** to demonstrate how OSS AI can empow
 ```bash
 ollama pull llama3.2:3b
 ```
-• Python 3.10+, Node 18+, Homebrew (macOS)
+• Python 3.10+, Node 18+, Homebrew (macOS)  
 • Repo cloned locally
 
 1) Start Backend (FastAPI)
@@ -135,12 +135,12 @@ npm run dev
 ```
 Open: http://localhost:5173
 
-UI Flow
-	1.	Click Choose File → pick a PDF resume.
-	2.	Enter Job Title and paste a Job Description.
-	3.	(Optional) Check Anonymize.
-	4.	Click Upload & Score → see Score, Summary, Evidence, Risks.
-	5.	Click Bias Compare → see Original, Anonymized, and Delta.
+UI Flow -
+1. Click Choose File → pick a PDF resume.  
+2. Enter Job Title and paste a Job Description.  
+3. (Optional) Check Anonymize.  
+4. Click Upload & Score → see Score, Summary, Evidence, Risks.  
+5. Click Bias Compare → see Original, Anonymized, and Delta.  
 
 4) Environment Variables (optional)
 
@@ -153,10 +153,11 @@ BACKEND_CORS_ORIGINS=http://localhost:5173,http://127.0.0.1:5173
 ```
 5) Troubleshooting
 
-• Slow first response: run POST /resume/warmup first.
-• Upload times out: ensure the PDF path is simple (no spaces/special chars) and size <10MB.
-• Bias Compare shows delta 0: try a different resume or JD; anonymization removes identity/locations, but if content is identical, scores may match.
-• Ollama connection issues: verify the daemon is listening:
+• Slow first response: run POST /resume/warmup first.  
+• Upload times out: ensure the PDF path is simple (no spaces/special chars) and size <10MB.  
+• Bias Compare shows delta 0: try a different resume or JD; anonymization removes identity/locations, but if content is identical, scores may match.  
+
+• Ollama connection issues: verify the daemon is listening:   
 ```bash
 curl -s http://127.0.0.1:11434/api/version | jq .
 curl -s http://127.0.0.1:11434/api/tags | jq .
