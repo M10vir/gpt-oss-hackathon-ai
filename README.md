@@ -72,12 +72,12 @@ This project was built for the **Hackathon** to demonstrate how OSS AI can empow
 
 0) Prereqs
 
-	•	Ollama running with llama3.2:3b pulled:
+• Ollama running with llama3.2:3b pulled:
 ```bash
 ollama pull llama3.2:3b
 ```
-	•	Python 3.10+, Node 18+, Homebrew (macOS)
-	•	Repo cloned locally
+• Python 3.10+, Node 18+, Homebrew (macOS)
+• Repo cloned locally
 
 1) Start Backend (FastAPI)
 ```bash
@@ -153,12 +153,12 @@ BACKEND_CORS_ORIGINS=http://localhost:5173,http://127.0.0.1:5173
 ```
 5) Troubleshooting
 
-	•	Slow first response: run POST /resume/warmup first.
-	•	Upload times out: ensure the PDF path is simple (no spaces/special chars) and size <10MB.
-	•	Bias Compare shows delta 0: try a different resume or JD; anonymization removes identity/locations, but if content is identical, scores may match.
-	•	Ollama connection issues: verify the daemon is listening:
+• Slow first response: run POST /resume/warmup first.
+• Upload times out: ensure the PDF path is simple (no spaces/special chars) and size <10MB.
+• Bias Compare shows delta 0: try a different resume or JD; anonymization removes identity/locations, but if content is identical, scores may match.
+• Ollama connection issues: verify the daemon is listening:
 ```bash
 curl -s http://127.0.0.1:11434/api/version | jq .
 curl -s http://127.0.0.1:11434/api/tags | jq .
 ```
-	•	Mac M1 Pro / 16 GB: this project is tuned for llama3.2:3b. Heavier models may time out.
+• Mac M1 Pro / 16 GB: this project is tuned for llama3.2:3b. Heavier models may time out.
