@@ -83,7 +83,7 @@ ollama pull llama3.2:3b
 
 ```bash
 # Clone repo
-git clone https://github.com/YourUsername/gpt-oss-hackathon-ai.git
+git clone https://github.com/M10vir/gpt-oss-hackathon-ai.git
 cd gpt-oss-hackathon-ai
 ```
 1) Start Backend (FastAPI)
